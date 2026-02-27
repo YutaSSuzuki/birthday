@@ -2,9 +2,8 @@
 // ここだけ編集すればOK
 // ==========================
 
-const ITINERARY_URL = "https://example.com"; // ← 旅のしおりURLに変更
-const PASSPHRASE = "ないしょ";               // ← 合言葉
-const SECRET_MESSAGE = "ここまで見てくれてありがとう。これからも味方だよ。";
+const ITINERARY_URL = "https://tabikanji.com/shiori/php/shiori.php?code=75f4d757a7";
+const PASSPHRASE = "愛してる";
 
 // ==========================
 // 以下は触らなくていい

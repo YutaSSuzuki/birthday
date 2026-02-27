@@ -71,9 +71,15 @@ input{
 
 .gallery{display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px}
 .gitem{border:1px solid rgba(255,255,255,.12);background:rgba(0,0,0,.12);border-radius:14px;overflow:hidden}
+.imglink{display:block}
+.imglink img{transition:transform .2s ease, filter .2s ease}
+.imglink:hover img{transform:scale(1.02);filter:brightness(1.06)}
 .gitem img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
 .gcap{padding:10px 12px}
 .gcap strong{display:block;margin-bottom:6px}
 .tips{margin:0;padding-left:18px;color:var(--muted);font-size:13px;line-height:1.7}
+.source{margin:8px 0 0;color:var(--muted);font-size:12px}
+.source a{color:var(--accent)}
+.source a:hover{text-decoration:none}
 
 #confetti{position:fixed;inset:0;pointer-events:none}

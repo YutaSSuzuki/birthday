@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.554">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Happy Birthday</title>
+<title>Happy Birthday - Happy Birthday, 彩也華!</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -43,94 +43,97 @@ ul.task-list li input[type="checkbox"] {
 <body>
 
 
+<header id="title-block-header">
+<h1 class="title">Happy Birthday, 彩也華!</h1>
+
+</header>
 
 
-
-<p>title: “Happy Birthday, 〇〇!” format: html lang: ja default-image-extension: png</p>
+<canvas id="confetti"></canvas>
 <div class="wrap">
-<div class="header">
-<p><span class="badge">🎂 Birthday Site / made with love</span></p>
-<p>Happy Birthday, 〇〇!</p>
-<p>今日はあなたのための日。短いページだけど、ちゃんと気持ちは詰めた。</p>
+  <div class="header">
+    <span class="badge">🎂 Birthday Site / made with love</span>
+    <p>誕生日おめでとう！誕生日をお祝いできるようにwebpageを作ったよ！</p>
+  </div>
+
+  <div class="grid">
+    <div class="card hero">
+      <p>メッセージ</p>
+      <div class="big">
+        Happy birthday!<br>
+        去年の誕生日から数え切れないくらい遊んで思い出を作ったね！<br>
+        毎年誕生日を祝うたびに、思い出が増えたことを実感してすごく嬉しいよ！<br>
+        これからも数え切れないぐらいの思い出を作ろうね！
+        いつもありがとう。誕生日を祝えてとっても嬉しいよ！
+      </div>
+      <div class="btns">
+        <button class="primary" id="btnConfetti">🎉 祝う（紙吹雪）</button>
+        <button id="btnReveal">🔒 もうひとつのメッセージ</button>
+      </div>
+      <div id="secret" class="secret">
+        <h3 class="anchored">質問：好きの2段階上は</h3>
+        <div class="inputrow">
+          <input id="pass" placeholder="回答を入力してね">
+          <button id="btnUnlock">開く</button>
+        </div>
+        <p id="lockedMsg" class="small"></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 class="anchored">旅のしおり</h2>
+      <div class="linkcard">
+        <div>
+          <div class="small">当日の流れ・予約情報</div>
+          <div class="strong">
+            <a id="itineraryLink" href="#" target="_blank" rel="noopener">旅のしおりを開く →</a>
+          </div>
+        </div>
+        <div class="emoji">🗺️</div>
+      </div>
+
+      <h2 class="anchored">伊東の見どころ＆名物</h2>
+      <div class="gallery">
+        <div class="gitem">
+          <a class="imglink" href="https://ito-marugen.com/" target="_blank" rel="noopener">
+            <img src="assets/images/meibutsu.jpg" alt="伊東の名物料理">
+          </a>
+          <div class="gcap">
+            <strong>名物料理：うずわめし / 干物 / 金目鯛</strong>
+            <ul class="tips">
+              <li><b>うずわめし</b>はソウダガツオを薬味とたたいた漁師飯。醤油→ご飯→だし茶漬けで味変するのが定番。</li>
+              <li><b>干物</b>は伊東の定番。凍ったまま焼くと旨味が逃げにくい。</li>
+              <li><b>金目鯛</b>は煮付け・刺身・寿司が王道。誕生日感も出る。</li>
+            </ul>
+            <p class="source">出典: <a href="https://www.tabirai.net/localinfo/article/article-32054/" target="_blank" rel="noopener">Tabirai</a></p>
+          </div>
+        </div>
+
+        <div class="gitem">
+          <a class="imglink" href="https://omuroyama.com/" target="_blank" rel="noopener">
+            <img src="assets/images/omuroyama.jpg" alt="大室山">
+          </a>
+          <div class="gcap">
+            <strong>大室山</strong>
+            <div class="small">リフトで登って山頂を一周。景色で「伊豆来た感」が出る。</div>
+            <p class="source">出典: <a href="https://omuroyama.com/" target="_blank" rel="noopener">大室山公式サイト</a></p>
+          </div>
+        </div>
+
+        <div class="gitem">
+          <a class="imglink" href="https://izushaboten.com/" target="_blank" rel="noopener">
+            <img src="assets/images/shaboten.jpg" alt="伊豆シャボテン動物公園">
+          </a>
+          <div class="gcap">
+            <strong>伊豆シャボテン動物公園</strong>
+            <div class="small">カピバラ露天風呂やふれあい体験が人気。</div>
+            <p class="source">出典: <a href="https://izushaboten.com/" target="_blank" rel="noopener">伊豆シャボテン動物公園公式サイト</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="grid">
-<div class="card hero">
-メッセージ
-<div class="big">
-お誕生日おめでとう。<br> これからの一年が、安心と笑いが多い一年になりますように。<br> いつもありがとう。
-</div>
-<div class="btns">
-<button class="primary" id="btnConfetti">🎉 祝う（紙吹雪）</button> <button id="btnReveal">🔒 もうひとつのメッセージ</button>
-</div>
-<div id="secret" class="secret">
-<h3 class="anchored">
-質問：好きの2段階上は
-</h3>
-<div class="inputrow">
-<input id="pass" placeholder="回答を入力してね"> <button id="btnUnlock">開く</button>
-</div>
-<p id="lockedMsg" class="small">
-</p>
-</div>
-</div>
-<div class="card">
-旅のしおり
-<div class="linkcard">
-<div>
-<div class="small">
-当日の流れ・予約情報
-</div>
-<div class="strong">
-<a id="itineraryLink" href="#" target="_blank" rel="noopener">旅のしおりを開く →</a>
-</div>
-</div>
-<div class="emoji">
-🗺️
-</div>
-</div>
-伊東の見どころ＆名物
-<div class="gallery">
-<div class="gitem">
-<img src="assets/images/meibutsu.jpg" alt="伊東の名物料理">
-<div class="gcap">
-<strong>名物料理：うずわめし / 干物 / 金目鯛</strong>
-<ul class="tips">
-<li>
-<b>うずわめし</b>はソウダガツオを薬味とたたいた漁師飯。醤油→ご飯→だし茶漬けで味変するのが定番。
-</li>
-<li>
-<b>干物</b>は伊東の定番。凍ったまま焼くと旨味が逃げにくい。
-</li>
-<li>
-<b>金目鯛</b>は煮付け・刺身・寿司が王道。誕生日感も出る。
-</li>
-</ul>
-</div>
-</div>
-<div class="gitem">
-<img src="assets/images/omuroyama.jpg" alt="大室山">
-<div class="gcap">
-<strong>大室山</strong>
-<div class="small">
-リフトで登って山頂を一周。景色で「伊豆来た感」が出る。
-</div>
-</div>
-</div>
-<div class="gitem">
-<img src="assets/images/shaboten.jpg" alt="伊豆シャボテン動物公園">
-<div class="gcap">
-<strong>伊豆シャボテン動物公園</strong>
-<div class="small">
-カピバラ露天風呂やふれあい体験が人気。
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<canvas id="confetti">
-</canvas>
 
 
 <script src="app.js"></script>
@@ -192,12 +195,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "コピーしました");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "コピーしました");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",

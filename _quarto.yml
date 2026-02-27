@@ -4,6 +4,7 @@ project:
   resources:
     - app.js
     - assets/**
+    - after-body.html
 
 website:
   title: "Happy Birthday"
@@ -16,7 +17,7 @@ format:
       - styles.css
     toc: false
     include-after-body:
-      - app.js
+      - after-body.html
     include-in-header:
       text: |
         <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon.png">

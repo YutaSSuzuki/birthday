@@ -1,0 +1,94 @@
+---
+title: "Happy Birthday, 〇〇!"
+format: html
+---
+
+::: {.wrap}
+::: {.header}
+<span class="badge">🎂 Birthday Site / made with love</span>
+
+# Happy Birthday, **〇〇**!
+
+今日はあなたのための日。短いページだけど、ちゃんと気持ちは詰めた。
+:::
+
+::: {.grid}
+::: {.card .hero}
+## メッセージ
+
+<div class="big">
+お誕生日おめでとう。<br>
+これからの一年が、安心と笑いが多い一年になりますように。<br>
+いつもありがとう。
+</div>
+
+<div class="btns">
+<button class="primary" id="btnConfetti">🎉 祝う（紙吹雪）</button>
+<button id="btnReveal">🔒 もうひとつのメッセージ</button>
+</div>
+
+<div id="secret" class="secret">
+### 合言葉で開く
+
+<div class="inputrow">
+<input id="pass" placeholder="合言葉（例：初デートの場所）">
+<button id="btnUnlock">開く</button>
+</div>
+
+<p id="lockedMsg" class="small"></p>
+</div>
+
+<div class="kpi">
+<div class="k"><div class="n">🎂</div><div class="l">今日まで</div></div>
+<div class="k"><div class="n">3</div><div class="l">ありがとう</div></div>
+<div class="k"><div class="n">∞</div><div class="l">幸せ</div></div>
+</div>
+:::
+
+::: {.card}
+## 旅のしおり
+
+<div class="linkcard">
+  <div>
+    <div class="small">当日の流れ・予約情報</div>
+    <div class="strong"><a id="itineraryLink" href="#" target="_blank" rel="noopener">旅のしおりを開く →</a></div>
+  </div>
+  <div class="emoji">🗺️</div>
+</div>
+
+## 伊東の見どころ＆名物
+
+<div class="gallery">
+  <div class="gitem">
+    <img src="assets/images/meibutsu.jpg" alt="伊東の名物料理">
+    <div class="gcap">
+      <strong>名物料理：うずわめし / 干物 / 金目鯛</strong>
+      <ul class="tips">
+        <li><b>うずわめし</b>はソウダガツオ（うずわ）を薬味とたたいた漁師飯。<b>醤油→ご飯→だし茶漬け</b>で味変して食べるのが定番。</li>
+        <li><b>干物</b>は伊東の定番。焼くときは<b>凍ってても解凍せず</b>焼くと旨味が逃げにくい。</li>
+        <li><b>金目鯛</b>は煮付け・刺身・寿司が王道。誕生日感も出る。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="gitem">
+    <img src="assets/images/omuroyama.jpg" alt="大室山">
+    <div class="gcap">
+      <strong>大室山</strong>
+      <div class="small">リフトで登って山頂を一周。景色で「伊豆来た感」が一気に出る。</div>
+    </div>
+  </div>
+
+  <div class="gitem">
+    <img src="assets/images/shaboten.jpg" alt="伊豆シャボテン動物公園">
+    <div class="gcap">
+      <strong>伊豆シャボテン動物公園</strong>
+      <div class="small">カピバラ（露天風呂）やふれあい系が強い。写真映えもする。</div>
+    </div>
+  </div>
+</div>
+:::
+:::
+:::
+
+<canvas id="confetti"></canvas>

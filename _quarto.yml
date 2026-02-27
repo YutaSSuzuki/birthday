@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - app.js
+    - assets/**
+
+website:
+  title: "Happy Birthday"
+  navbar: false
+
+format:
+  html:
+    theme: none
+    css:
+      - styles.css
+    toc: false
+    include-after-body:
+      - app.js
+    include-in-header:
+      text: |
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon.png">

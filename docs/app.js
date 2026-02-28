@@ -4,7 +4,8 @@
 
 const ITINERARY_URL = "https://tabikanji.com/shiori/php/shiori.php?code=75f4d757a7";
 const PASSPHRASE = "愛してる";
-const SECRET_MESSAGE = "これからも彩也華と一緒に色々な場所へ行けることを心から楽しみにしてるよ！<br>今日明日は伊東を遊びまくって、二人で倒れるまで遊ぼうね！<br>26歳の誕生日おめでとう！<br>こころから愛してるよ！";
+const SECRET_MESSAGE = "これからも彩也華と一緒に色々な場所へ行けることを心から楽しみにしてるよ！<br>今日明日は伊東を遊びまくって、二人で倒れるまで遊ぼうね！<br>26歳の誕生日おめでとう！<br>こころから愛してるよ！<br>秘密のコード<br>
+XJQRJD4ZM2XJM4K2";
 
 // ==========================
 // 以下は触らなくていい
